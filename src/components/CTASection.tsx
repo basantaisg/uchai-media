@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Calendar } from "lucide-react";
 
 const CTASection = () => {
   return (
@@ -23,10 +23,12 @@ const CTASection = () => {
             MEDIA can do for your brand.
           </p>
           <a
-            href="#"
+            href="https://calendly.com/uchai-media/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glow inline-flex items-center gap-2 px-8 py-4 rounded-full font-semibold text-primary-foreground text-lg"
           >
-            Claim Your Free Audit <ArrowRight size={20} />
+            <Calendar size={20} /> Claim Your Free Audit <ArrowRight size={20} />
           </a>
         </div>
       </motion.div>
