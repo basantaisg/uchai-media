@@ -48,23 +48,29 @@ const ResultsSection = () => {
 
       {/* Portfolio & Analytics Grid */}
       <div className="grid md:grid-cols-3 gap-4">
-        <motion.div
+        <motion.a
+          href="https://www.tiktok.com/@professional.edu.pkr/video/7604381238987722000"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="glass-card rounded-2xl overflow-hidden glow-border"
+          className="glass-card rounded-2xl overflow-hidden glow-border block cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
         >
           <img src={portfolioGrid} alt="UCHAI Media portfolio - resort marketing" className="w-full h-full object-cover" />
-        </motion.div>
-        <motion.div
+        </motion.a>
+        <motion.a
+          href="https://www.tiktok.com/@professional.edu.pkr/video/7603669306328534288"
+          target="_blank"
+          rel="noopener noreferrer"
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="glass-card rounded-2xl overflow-hidden glow-border"
+          className="glass-card rounded-2xl overflow-hidden glow-border block cursor-pointer transition-transform duration-300 hover:scale-105 hover:shadow-[0_0_30px_rgba(255,255,255,0.15)]"
         >
           <img src={portfolioGrid2} alt="UCHAI Media portfolio - nightlife and dining" className="w-full h-full object-cover" />
-        </motion.div>
+        </motion.a>
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           whileInView={{ opacity: 1, scale: 1 }}

@@ -59,10 +59,12 @@ const HeroSection = () => {
           className="flex flex-col sm:flex-row items-center justify-center gap-4"
         >
           <a
-            href="#contact"
+            href="https://calendly.com/uchai-media/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glow px-8 py-3.5 rounded-full font-semibold text-primary-foreground flex items-center gap-2"
           >
-            Book a Strategy Call <ArrowRight size={18} />
+            <Calendar size={18} /> Book a Strategy Call <ArrowRight size={18} />
           </a>
           <a
             href="#results"
