@@ -1,7 +1,10 @@
 import { motion } from "framer-motion";
 import { Star, MessageCircle } from "lucide-react";
 import reviewRitesh from "@/assets/review-ritesh.png";
-import reviewConsultancy from "@/assets/review-consultancy.png";
+import reviewSarah from "@/assets/review-sarah.png";
+import reviewDavid from "@/assets/review-david.png";
+import reviewRamesh from "@/assets/review-ramesh.png";
+import reviewSunita from "@/assets/review-sunita.png";
 
 const reviews = [
   {
@@ -10,9 +13,19 @@ const reviews = [
     text: "I really liked the video. Uchai Media delivers exactly what they promise — fast, professional, and high quality. Couldn't ask for more!",
   },
   {
-    name: "pkr_consultancy",
+    name: "Sunita",
     rating: 5,
-    text: "We really liked your work. Uchai Media is one of the best marketing agencies in Nepal. We will surely be in touch for more projects!",
+    text: "Mero boutique ko page ahile ekdam active chha ra sabai credit Uchai Media lai janchha. Post haru ko design, captions, ra customer lai attract garne tarika uniharuko ekdam unique chha. Kaam ma ekdam dedication dekhaunu hunchha. Aafno business lai digital platform ma grow garna chahanu hunchha bhane, Uchai Media is the best!",
+  },
+  {
+    name: "Ramesh Thapa",
+    rating: 5,
+    text: "Uchai Media ko kaam ekdamai professional chha. Hami le hamro real estate project ko lagi video ra marketing ko kaam deko thiyum, ra result socheko vanda dherai ramro aayo. Team ekdam friendly chha, ra Nepali market ko trend uniharulai ramrari tha chha. Quality kaam chahine le Uchai Media lai nai samjhida hunchha.",
+  },
+  {
+    name: "David (SAAS Founder)",
+    rating: 5,
+    text: "Uchai Media doesn't just make videos; they tell stories. We needed a way to explain a complex software product while keeping it human and engaging. The production quality, from lighting to editing, was top-tier. They are professional, responsive, and insanely creative. I wouldn't trust our visual branding to anyone else.",
   },
   {
     name: "Basanta",
@@ -28,7 +41,10 @@ const reviews = [
 
 const chatScreenshots = [
   { src: reviewRitesh, alt: "WhatsApp review from Ritesh" },
-  { src: reviewConsultancy, alt: "WhatsApp review from pkr_consultancy" },
+  { src: reviewSarah, alt: "WhatsApp review from Sarah" },
+  { src: reviewDavid, alt: "WhatsApp review from David" },
+  { src: reviewRamesh, alt: "WhatsApp review from Ramesh Thapa" },
+  { src: reviewSunita, alt: "WhatsApp review from Sunita" },
 ];
 
 const fadeUp = {
@@ -66,7 +82,7 @@ const ClientReviewSection = () => {
       </motion.div>
 
       {/* Star Rating Cards */}
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-12">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mb-12">
         {reviews.map((review, i) => (
           <motion.div
             key={review.name}
@@ -95,14 +111,14 @@ const ClientReviewSection = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
-        className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto"
+        className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 max-w-5xl mx-auto"
       >
         {chatScreenshots.map((shot, i) => (
           <motion.div
             key={shot.alt}
             custom={i}
             variants={fadeUp}
-            className="glass-card rounded-2xl overflow-hidden p-3"
+            className="glass-card rounded-2xl overflow-hidden p-2"
           >
             <img
               src={shot.src}
