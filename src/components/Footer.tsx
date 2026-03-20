@@ -10,13 +10,13 @@ const Footer = () => {
         </span>
 
         <div className="flex items-center gap-5">
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="https://www.instagram.com/uchai_marketing/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <Instagram size={18} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="https://www.instagram.com/uchai_marketing/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <Facebook size={18} />
           </a>
-          <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
+          <a href="https://www.instagram.com/uchai_marketing/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-foreground transition-colors">
             <Youtube size={18} />
           </a>
         </div>

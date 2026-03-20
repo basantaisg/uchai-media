@@ -31,7 +31,9 @@ const Navbar = () => {
             </a>
           ))}
           <a
-            href="#contact"
+            href="https://calendly.com/uchai-media/30min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn-glow px-5 py-2.5 rounded-full text-sm font-semibold text-primary-foreground"
           >
             Ignite Your Brand
@@ -68,7 +70,9 @@ const Navbar = () => {
                 </a>
               ))}
               <a
-                href="#contact"
+                href="https://calendly.com/uchai-media/30min"
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={() => setOpen(false)}
                 className="btn-glow px-5 py-2.5 rounded-full text-sm font-semibold text-primary-foreground text-center"
               >
